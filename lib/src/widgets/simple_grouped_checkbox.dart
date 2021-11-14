@@ -53,12 +53,14 @@ class SimpleGroupedCheckbox<T> extends StatefulWidget {
   final bool isLeading;
   final bool isExpandableTitle;
   final bool helperGroupTitle;
+  final bool changeTitleTextColor;
 
   SimpleGroupedCheckbox({
     Key? key,
     required this.controller,
     required this.itemsTitle,
     required this.values,
+    required this.changeTitleTextColor;
     this.onItemSelected,
     this.groupTitle,
     this.groupTitleAlignment = Alignment.center,
@@ -166,8 +168,8 @@ class SimpleGroupedCheckboxState<T>
               value: widget.values[i],
               activeColor: widget.groupStyle?.activeColor,
               itemStyle: widget.groupStyle?.itemTitleStyle?.copyWith(
-                color: item.checked!
-                    ? widget.groupStyle?.itemTitleStyle?.color
+                color: item.checked! 
+                    ? widget.groupStyle?.activeColor
                     : widget.groupStyle?.itemTitleStyle?.color,
               ),
               isLeading: widget.isLeading,
