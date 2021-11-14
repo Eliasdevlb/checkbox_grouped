@@ -60,7 +60,6 @@ class SimpleGroupedCheckbox<T> extends StatefulWidget {
     required this.controller,
     required this.itemsTitle,
     required this.values,
-    required this.changeTitleTextColor,
     this.onItemSelected,
     this.groupTitle,
     this.groupTitleAlignment = Alignment.center,
@@ -71,6 +70,7 @@ class SimpleGroupedCheckbox<T> extends StatefulWidget {
     this.isLeading = false,
     this.isExpandableTitle = false,
     this.helperGroupTitle = true,
+    this.changeTitleTextColor=false,
   })  : assert(values.length == itemsTitle.length),
         assert(itemsSubTitle.isNotEmpty
             ? itemsSubTitle.length == itemsTitle.length
