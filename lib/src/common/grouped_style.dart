@@ -80,7 +80,7 @@ class ChipGroupStyle extends _BaseGroupStyle {
   const ChipGroupStyle.minimize({
     this.backgroundColorItem = Colors.grey,
     this.selectedColorItem = Colors.black,
-    this.textColor = Colors.black,
+    this.textColor = Colors.white60,
     this.selectedTextColor = Colors.white,
     this.selectedIcon = Icons.done,
     this.disabledColor = Colors.grey,
