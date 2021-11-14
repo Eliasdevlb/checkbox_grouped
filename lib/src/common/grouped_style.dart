@@ -99,6 +99,7 @@ class SwitchGroupStyle extends _BaseGroupStyle {
   SwitchGroupStyle({
     Color? activeColor,
     TextStyle? itemTitleStyle,
+    required this.textColor,
   }) : super(
           activeColor: activeColor,
           itemTitleStyle: itemTitleStyle,
