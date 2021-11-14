@@ -167,7 +167,7 @@ class SimpleGroupedCheckboxState<T>
               activeColor: widget.groupStyle?.activeColor,
               itemStyle: widget.groupStyle?.itemTitleStyle?.copyWith(
                 color: item.checked!
-                    ? widget.groupStyle?.activeColor
+                    ? widget.groupStyle?.itemTitleStyle?.color
                     : widget.groupStyle?.itemTitleStyle?.color,
               ),
               isLeading: widget.isLeading,
